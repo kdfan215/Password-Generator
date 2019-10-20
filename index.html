@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>   
+        
+    <header>
+      <h1>Password Generator</h1>
+    </header>
+    <hr>
+    <h2>Generate a Password</h2>
+    <div class="container">
+    <textarea
+    max = "50"
+    min = "0"
+    readonly
+    id="password"
+    placeholder="Your Secure Password"
+    aria-label="Generated Password"
+    >  
+  </textarea>
+    <button onclick= "random()" id="generate">Generate Password</button>
+    <button onclick= "copy()" id="copy">
+      Copy to Clipboard
+    </button>
+    </div>  
+    <script src="index.js"></script>
+  </body>
+</html>
